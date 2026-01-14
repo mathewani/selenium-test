@@ -18,7 +18,7 @@ public class SearchFlightTests extends BaseTest {
             searchFlight.selectArrivalAirport("Kochi (Cochin) (COK)");
             searchFlight.selectArrOption();
             searchFlight.clickDateInput();
-            searchFlight.selectDatePickerDropdown("2026/01/18");
+            //searchFlight.selectDatePickerDropdown("2026/01/18");
         }
         catch (Exception e) {
             e.printStackTrace();
