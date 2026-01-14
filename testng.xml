@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1" parallel="methods" thread-count="3">
+    <listeners>
+        <listener class-name="myproject.Listeners.LoggerListener"/>
+    </listeners>
+    <parameter name="url" value="https://www.selenium.dev/selenium/web/web-form.html"/>
+    <parameter name="url"
+               value="https://www.selenium.dev/selenium/web/scrolling_tests/frame_with_height_above_2000.html"/>
+    <test name="Tests">
+        <classes>
+            <!--class name="myproject.Tests.WebFormTest"/-->
+            <!--class name="myproject.Tests.ScrollTest"/ -->
+            <class name="myproject.Tests.SearchFlightTests"/>
+        </classes>
+    </test>
+
+</suite>
